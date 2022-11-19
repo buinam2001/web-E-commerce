@@ -1,0 +1,54 @@
+.main
+{
+    font-size: 70px;
+    text-align: center;
+}
+.box-s{
+    border: 1px solid rgba(174, 178, 187, 0.717);
+    cursor: pointer;
+}
+.box-s:hover
+{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+.icon
+{
+    display:flex;
+    align-items: center;
+    font-size: 70px;
+}
+.icon-number
+{
+    margin-left: 110px;
+}
+.nav-admin
+{
+    position: fixed;   
+}
+@media (max-width: 1205px) {
+ .nav-admin
+ {
+    
+     display:none;
+ }
+
+ 
+  }
+  @media (max-width: 1177px) {
+
+    
+    .box-left
+    {
+            
+      transform: translateX(0%) !important;
+    }
+    
+     }
+   
+
+  
+
+  .box-left
+  {
+    transform: translateX(20%);
+  }

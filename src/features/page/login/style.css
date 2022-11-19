@@ -1,0 +1,59 @@
+.from_left
+{
+  background-image: linear-gradient(to right bottom, #fc464e , #fc4169 );   
+  color:white;
+ }
+.from_login
+{
+    text-align: center; 
+    padding-top: 25px;
+}
+.from-wapper
+{
+     height: 100vh;
+     display:flex;
+     align-items: center;
+     background-color: #e9ecef;
+
+
+}
+form
+{
+  text-align: center;
+  padding: 70px;
+}
+.form-control
+{
+  background-color: #e9ecef;
+}
+.btn-from
+{
+  border: none;
+  width: 130px;
+  border-radius: 25px;
+  color:white;
+  background-color: #fc4b2c;
+  padding: 7px;
+  
+}
+.from_left-btn
+{
+border: 1px solid rgb(255, 255, 255);
+padding: 5px 25px 5px 25px;
+border-radius: 25px;
+
+}
+.errors
+{
+    text-align: left !important;
+    color: red;
+    font-size: 13px;
+}
+.from_left-btn{
+  cursor: pointer;
+}
+
+.btn-from:focus{
+
+  background-color: cadetblue;
+}

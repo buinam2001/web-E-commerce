@@ -1,0 +1,13 @@
+.card-link
+{
+color: black;
+
+}
+.fiter
+{
+    width: 200px;
+}
+.card_cate:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+    transition: all 0.2s;
+}

@@ -1,0 +1,219 @@
+
+
+
+
+
+.box-card
+{
+  gap: 15px 32px;
+}
+.card-text
+{
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.card
+{
+
+  border-radius: 10px;
+}
+.card-h:hover 
+{
+
+box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+transition: all 0.2s;
+
+
+
+}
+.img-header
+{
+max-width: 100%;
+
+}
+.hero
+  {
+    margin-top: 20px;
+    
+    right: 16px;
+    border-top: 3px solid #2e3192;
+    width: 100%;
+
+    background-color: #ece6e6;
+  }
+  .hero_title
+  {
+    width: 170px;
+    font-size: 17px;
+    background-color: #2e3192;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    border-radius:0px 99px 99px 0px;
+    text-transform: uppercase;
+  }
+.hero_list
+{
+margin-left: auto;
+}
+.h-size
+{
+padding: 20px;
+color: rgb(232, 227, 227);
+font-size: 14px;
+}
+.footer_list
+{
+
+list-style: none;
+padding: 0;
+}
+
+.footer_contact
+{
+list-style: none;
+padding: 0;
+}
+.footer_contact-item:nth-child(odd) {
+   font-size: 19px;
+   color: #2e3192;
+
+  }
+.footer_contact-item:nth-child(even) {
+   font-size: 11px;
+   /* color: #a1c4fd ; */
+   font-weight: bold;
+   color:#1c1c1c;
+
+  }
+  footer
+  {
+    background-image: url("http://mauweb.monamedia.net/vienthonga/wp-content/uploads/2017/12/footer-bg.png");
+  }
+  .btn-edit
+  {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 9px !important;
+  color: black;
+  }
+
+  .header_tile
+  {
+    display: flex;
+  }
+  .header_tile-text
+  {
+    margin-left: 20px;
+  }
+  .block_content
+  {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+.navbar-collapse
+{
+  transition: all 0.4s cubic-bezier(0, 0, 0.38, 0.58) 0s !important;
+}
+
+.btn-edit
+{
+  font-size: 20px;
+}
+.card-to
+{
+  width: 40%;
+  padding: 5px;
+  color: #1c1c1c;
+  font-size: 25px;
+  border-radius:10px ;
+  box-sizing: border-box;
+  text-align: center;
+
+  
+}
+.card-to:hover
+{
+  color: white;
+  background-color: #f79011;
+
+
+}
+.card-body
+{
+  margin-left: 5px;
+}
+.card-be
+{
+  margin: 10px;
+  width: 40%;
+  padding: 5px;
+  color: #1c1c1c;
+  font-size: 25px;
+  border-radius:10px ;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+.card-be:hover
+{
+  background-color: #f79011;
+  color: white;
+
+
+}
+
+
+  .user
+  {
+      width: 150px;
+      border: 1px solid black;
+      border-radius: 10px;
+  }
+  .user_name
+  {
+      padding: 2px;
+  }
+  .user_name:hover
+  {
+      background-color: rgb(235, 110, 99);
+      color: white;
+  }
+  .user_logout
+  {
+      padding: 2;
+  }
+  .user_logout:hover
+  {
+      background-color: rgb(235, 110, 99);
+      color: white;
+  }
+.card-title
+{
+  font-size: 14px !important;
+}
+.link-product
+{
+  text-decoration: none;
+  color: black;
+}
+
+.pagination
+{
+  display: flex;
+  justify-content: center;
+}
+.page-link:hover
+{
+  cursor :pointer
+
+}
+

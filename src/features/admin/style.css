@@ -1,0 +1,54 @@
+
+.btn_upload
+{
+    display: block;
+}  
+.img_up
+{
+    width: 150px;
+    height: 150px;
+}
+
+/* load  */
+
+.wapper
+{
+  padding: 0 !important;
+  margin: 0 !important;
+  
+}
+.nav-admin
+{
+
+ 
+  height: 100vh;
+
+
+}
+.list
+{
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+ 
+}
+.list_item
+{
+  color: white;
+  font-weight: 300;
+  list-style: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 68, 0);
+ 
+}
+
+
+.nav-links
+{
+  text-decoration: none;
+}
+
+
