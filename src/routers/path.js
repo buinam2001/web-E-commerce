@@ -3,7 +3,8 @@ export const pathpublic = {
     CategoryProduct:'/:category',
     cart:'/cart',
     ProductDes:'/product/:id',
-    // NotFound:'*',
+    NotFound1:'NotFound',
+    NotFound:'*',
 }
 export const pathpublicParam = {
     homeParam:'/',

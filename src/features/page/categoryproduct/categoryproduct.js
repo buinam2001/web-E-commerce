@@ -2,26 +2,43 @@ import React ,{useState,useEffect, useMemo} from 'react';
 import { MdAddShoppingCart } from "react-icons/md";
 import { useSelector , useDispatch } from "react-redux";
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { addcart } from "../../slices/cartSlies";
+import { Link , useNavigate} from 'react-router-dom';
+import { addcart } from "../../../redux/slices/cartSlies";
 import { pathpublicParam } from '../../../routers/path';
 import { loc_xoa_dau, currencyVND} from '../../Methods';
+import { pathpublic } from '../../../routers/path';
 import "./style.css";
 
 const CategoryProduct = () =>
 {
   
 
+    let navigate = useNavigate();
     const dispatch = useDispatch();
     let { category } = useParams();
     const data = useSelector((state) => state.productApi);
-
-    // const datacategory = useSelector((state) => state.categoryApi);
-    // let index = datacategory.findIndex(({ name }) => (loc_xoa_dau(name).split(" ").join('').toLowerCase() === category.split(" ").join('').toLowerCase()));  
     const [sortType, setSortType] = useState();
     const [ product , setproduct ] = useState([]);
     const items = ['giá cao','Giá thấp' ];
 
+    const categorysearch = useSelector((state) => state.categoryApi);
+    const index = categorysearch.findIndex(({ name }) => 
+    {
+        return  loc_xoa_dau(name).split(" ").join('').toLowerCase() === category.split(" ").join('').toLowerCase()
+            
+    });  
+
+    useEffect(function() {
+      
+      if (index === -1) {
+
+      
+        navigate(pathpublic.NotFound1)
+        
+      }
+
+    },[navigate,index])
+   
   const datacategory = useMemo(function() {
 
        let datacategory = data.filter((data) =>{
@@ -46,7 +63,6 @@ const CategoryProduct = () =>
          
     },[category]); 
 
-
     useEffect(() => {
             const sortProduct = type => {   
               let fomat = +type;
@@ -70,8 +86,10 @@ const CategoryProduct = () =>
             };
         
             sortProduct(sortType);
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sortType]); 
+
+
 
     const pushcard = (data)=>
           {
@@ -109,9 +127,7 @@ const CategoryProduct = () =>
         </select>
 
         <div className="row m-4">   
-            { 
-                  // product.length === 0 ? <div></div> :
-                  
+            {  
                   product.map((value,index)=>
                   {
                       return (

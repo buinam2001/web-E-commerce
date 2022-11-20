@@ -6,7 +6,6 @@ import LoadProduct from './loading/loadproduct';
 import Admin from './features/admin';
 import AdminFrom from './features/admin/fromAdmin/adminfrom';
 import { pathpublic , pathprivate } from './routers/path';
-// import NotFound from './features/notfile';
 
 
 

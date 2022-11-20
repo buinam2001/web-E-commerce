@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./style.css"
 import {useDispatch , useSelector } from "react-redux";
-import { FcManager,FcKindle,FcViewDetails,FcPortraitMode,FcPaid } from "react-icons/fc";
+import { FcKindle,FcViewDetails,FcPaid } from "react-icons/fc";
 import {MdOutlineProductionQuantityLimits } from "react-icons/md";
 import {BiLogInCircle } from "react-icons/bi";
 import { Link } from 'react-router-dom';
-import { getorder } from "../../slices/ordercSlies";
-import {getuser } from "../../slices/userSlies";
+import { getorder } from "../../../redux/slices/ordercSlies";
+// import {getuser } from "../../slices/userSlies";
 import { pathprivate } from "../../../routers/path";
 
 function Manage() {
@@ -19,7 +19,7 @@ function Manage() {
   useEffect(() => {
   
        dispatch(getorder());
-       dispatch(getuser());
+
  
      // eslint-disable-next-line react-hooks/exhaustive-deps
    },[]);

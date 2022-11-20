@@ -2,7 +2,7 @@
   import { MdAddShoppingCart } from "react-icons/md";
   import { Link } from 'react-router-dom';
   import { useDispatch } from "react-redux";
-  import { addcart } from "../../../slices/cartSlies";
+  import { addcart } from "../../../../redux/slices/cartSlies";
   import { pathpublicParam } from '../../../../routers/path';
   import { currencyVND } from '../../../Methods';
   const CategoryPage = ({valuecate,valueproduct}) =>

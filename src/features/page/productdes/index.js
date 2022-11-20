@@ -3,7 +3,7 @@ import "./style.css"
 import { useParams } from 'react-router-dom'
 import { useSelector , useDispatch } from "react-redux";
 import { Link } from 'react-router-dom';
-import { addcart } from "../../slices/cartSlies";
+import { addcart } from "../../../redux/slices/cartSlies";
 import { pathpublic } from '../../../routers/path';
 import { loc_xoa_dau , currencyVND } from '../../Methods';
 

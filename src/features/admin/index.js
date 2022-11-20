@@ -2,8 +2,8 @@ import "./style.css"
 import React ,{useEffect} from "react";
 import { Outlet } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
-import { getproduct } from "../slices/productcSlies";
-import { getcategory } from "../slices/categorySlies";
+import { getproduct } from "../../redux/slices/productcSlies";
+import { getcategory } from "../../redux/slices/categorySlies";
 import { pathprivate } from "../../routers/path";
 import { useDispatch } from "react-redux";
 function Admin() {

@@ -37,12 +37,7 @@ const getAll = () => {
 
 
 
-  const removeAll = () => {
-    return axiosClient.delete(`/tutorials`);
-  };
-  const findByTitle = title => {
-    return axiosClient.get(`/tutorials?title=${title}`);
-  };
+
   
   const ProductService = {
     getAll,
@@ -50,7 +45,6 @@ const getAll = () => {
     create,
     update,
     remove,
-    removeAll,
-    findByTitle
+   
   };
   export default ProductService;

@@ -1,15 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import productcurd from '../features/slices/productcSlies';
-import categorycurd from "../features/slices/categorySlies";
-import cartcurd from ".././features/slices/cartSlies";
-import ordercurd from "../features/slices/ordercSlies";
-import usercurd from "../features/slices/userSlies"
+import productcurd from './slices/productcSlies';
+import categorycurd from "./slices/categorySlies";
+import cartcurd from "./slices/cartSlies";
+import ordercurd from "./slices/ordercSlies";
 export default configureStore({
   reducer: {
     productApi: productcurd,
     categoryApi:categorycurd,
     cart :cartcurd,
     orderApi: ordercurd,
-    userApi : usercurd
   }
 });

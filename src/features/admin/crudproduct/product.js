@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { deleteproduct} from "../../slices/productcSlies"
+import { deleteproduct} from "../../../redux/slices/productcSlies";
 import { Link } from 'react-router-dom';
 import { pathprivate ,pathprivateParam } from '../../../routers/path';
 import { currencyVND } from '../../Methods';
@@ -22,7 +22,7 @@ const handlechange = (e) =>
   var value = e.target.value;
   
     SetSearch(value);
-    console.log(value);
+  
 
 }
 

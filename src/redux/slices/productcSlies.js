@@ -12,20 +12,11 @@ export const getproduct = createAsyncThunk(
     }
   );
    
+
   export const createproduct = createAsyncThunk(
     "Product/create",
-    async ({ 
-      name, 
-      price,
-      discount,
-      photoavt,
-      photodes,
-      des,
-      category,
-      quantity,
-      hangsx 
-    }) => {
-      const res = await ProductService.create({ name,price,discount,photoavt,photodes,des,category,quantity,hangsx });
+    async (data) => {
+      const res = await ProductService.create(data);
       return res.data;
     }
   );

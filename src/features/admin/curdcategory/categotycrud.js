@@ -1,10 +1,9 @@
 import React, { useState , useEffect} from 'react';
 import { useDispatch } from "react-redux";
 import { useParams } from 'react-router-dom';
-import { createcategory } from "../../slices/categorySlies";
+import { createcategory , updateproduct } from "../../../redux/slices/categorySlies";
 import { useNavigate } from 'react-router-dom';
 import servicerCategory from '../../../services/servicercategory';
-import { updateproduct } from '../../slices/categorySlies';
 import { pathprivate } from '../../../routers/path';
 function CategoryAdd() {
     const [category, setcategory] = useState("");

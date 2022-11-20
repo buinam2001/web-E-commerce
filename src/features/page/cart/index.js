@@ -1,9 +1,8 @@
 import React, { useEffect }  from "react";
-import { createorder } from "../../slices/ordercSlies";
+import { createorder } from "../../../redux/slices/ordercSlies";
 import { useDispatch , useSelector} from "react-redux";
-import { removecart } from "../../slices/cartSlies";
 import { BsFillBackspaceFill } from "react-icons/bs";
-import { DecreaseQuantity, IncreaseQuantity } from "../../slices/cartSlies";
+import { DecreaseQuantity, IncreaseQuantity , removecart } from "../../../redux/slices/cartSlies";
 import { currencyVND } from "../../Methods";
 import "./style.css";
 

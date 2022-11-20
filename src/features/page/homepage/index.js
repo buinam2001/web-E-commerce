@@ -1,4 +1,4 @@
-import { addcart } from "../../slices/cartSlies"
+import { addcart } from "../../../redux/slices/cartSlies"
 import React ,{useState,useEffect} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css";

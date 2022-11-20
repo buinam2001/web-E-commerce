@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import {useDispatch , useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
-import { getorder ,deleteorder } from "../../slices/ordercSlies";
+import { getorder ,deleteorder } from "../../../redux/slices/ordercSlies";
 import { pathprivateParam } from "../../../routers/path";
 import { currencyVND } from "../../Methods";
 

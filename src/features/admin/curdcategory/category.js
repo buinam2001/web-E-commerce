@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { useSelector,useDispatch } from "react-redux";
-import {deletecategory} from "../../slices/categorySlies";
+import {deletecategory} from "../../../redux/slices/categorySlies";
 import { pathprivate , pathprivateParam } from '../../../routers/path';
 import "./style.css"
 function Category() {

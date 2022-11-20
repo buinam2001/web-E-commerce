@@ -1,4 +1,4 @@
-import {createproduct , updateproduct} from "../../slices/productcSlies"
+import {createproduct , updateproduct} from "../../../redux/slices/productcSlies";
 import { useDispatch , useSelector} from "react-redux";
 import React, {useState , useEffect} from 'react';
 import { storage } from "../../../configfirebase";
@@ -18,8 +18,10 @@ const [image, setImage] = useState(null);
 
 const [urlimage, seturlimage] = useState(null);
 const [progress, setProgress] = useState(0);
+const product = useSelector((state) => state.productApi);
+const Category = useSelector((state) => state.categoryApi);
 const dispatch = useDispatch();
-var navigate = useNavigate();
+let navigate = useNavigate();
 let { id } = useParams();
 
 const [productEdit, setproductEdit] = useState({
@@ -48,20 +50,11 @@ useEffect( () => {
    
  },[id]);
 
- const product = useSelector((state) => state.productApi);
-
-
-const Category = useSelector((state) => state.categoryApi);
-
-
 
 const productid = product.find((value) => {
 
   return value.id === +id
 })
-
-
-
 
 const getvalue = (e) =>
 {
@@ -93,6 +86,8 @@ const getvalue = (e) =>
   {
     if(valuefrom.photoavt.length !== 0 && valuefrom.name && id === undefined)
     {
+
+      
       navigate(pathprivate.ProductAdmin);
       dispatch(createproduct(valuefrom));
     }
