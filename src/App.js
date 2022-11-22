@@ -46,7 +46,6 @@ function App() {
                     router.privateRouter.map((route,index) => {
                         return(
                               <Route key={index} path={route.path} element={route.component}></Route>
-                            
                             )
                         })        
                  

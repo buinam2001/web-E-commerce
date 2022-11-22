@@ -102,10 +102,9 @@ return (
                   )
 
                 }
-               
                 <div className="form-group mt-3">
                   <input 
-                    type="text"
+                    type="password"
                     className="form-control"
                     id="password" 
                     name="password"

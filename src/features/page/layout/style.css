@@ -300,15 +300,32 @@ header
 
 
 
+@media (max-width: 1100px) {
+    .cart-auth{
+       width: 170px;
+    }
+
+}
 
 
-@media (max-width: 760px) {
 
 
-    
+@media (max-width: 760px) {  
     .search_crad{
         width: 50%;
     }
-  
 
 }
+
+@media (max-width: 610px) {
+
+    .cart-auth{
+        left: -130px;
+        padding: 5px;
+     }
+     .traingle{
+        left: 125px;
+     }
+   
+}
+
