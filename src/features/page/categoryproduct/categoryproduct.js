@@ -2,18 +2,17 @@ import React ,{useState,useEffect, useMemo} from 'react';
 import { MdAddShoppingCart } from "react-icons/md";
 import { useSelector , useDispatch } from "react-redux";
 import { useParams } from 'react-router-dom';
-import { Link , useNavigate} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { addcart } from "../../../redux/slices/cartSlies";
 import { pathpublicParam } from '../../../routers/path';
 import { loc_xoa_dau, currencyVND} from '../../Methods';
-import { pathpublic } from '../../../routers/path';
+// import NotFound from '../../notfile';
 import "./style.css";
 
 const CategoryProduct = () =>
 {
   
 
-    let navigate = useNavigate();
     const dispatch = useDispatch();
     let { category } = useParams();
     const data = useSelector((state) => state.productApi);
@@ -21,23 +20,14 @@ const CategoryProduct = () =>
     const [ product , setproduct ] = useState([]);
     const items = ['giá cao','Giá thấp' ];
 
-    const categorysearch = useSelector((state) => state.categoryApi);
-    const index = categorysearch.findIndex(({ name }) => 
-    {
-        return  loc_xoa_dau(name).split(" ").join('').toLowerCase() === category.split(" ").join('').toLowerCase()
+    // const categorysearch = useSelector((state) => state.categoryApi);
+    // const index = categorysearch.findIndex(({ name }) => 
+    // {
+    //     return  loc_xoa_dau(name).split(" ").join('').toLowerCase() === category.split(" ").join('').toLowerCase()
             
-    });  
+    // });  
 
-    useEffect(function() {
-      
-      if (index === -1) {
-
-      
-        navigate(pathpublic.NotFound1)
-        
-      }
-
-    },[navigate,index])
+   
    
   const datacategory = useMemo(function() {
 
@@ -108,11 +98,11 @@ const CategoryProduct = () =>
     }
 
 
-
+   
       
     return(
       
-    
+   
         <div style={{marginTop: '145px'}} className="container">
           
          <select value={sortType} onChange={handleChange} className="form-select form-select-lg mb-3 fiter" aria-label=".form-select-lg example">

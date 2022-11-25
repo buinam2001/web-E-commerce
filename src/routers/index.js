@@ -28,7 +28,7 @@ const LazyProductDes = React.lazy(() => import("../features/page/productdes"));
     { path:pathpublic.CategoryProduct, component : <CategoryProduct /> },
     { path:pathpublic.cart, component : <Cart /> },
     { path:pathpublic.NotFound, component : <NotFound />},
-    { path:pathpublic.NotFound1, component : <NotFound />},
+    
     { 
       path:pathpublic.ProductDes,
       component : <React.Suspense fallback={<LoadProduct></LoadProduct>}> <LazyProductDes></LazyProductDes> </React.Suspense>, 
