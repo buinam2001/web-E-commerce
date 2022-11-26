@@ -25,9 +25,12 @@ các chức năng chính :
 
 - trang quản trị:
     tên tài khoản : admin
+    
     mật khẩu : admin
   
     -quản lý sản phẩm
+    
     -quản lý danh mục
+    
     -kiểm tra đơn hàng
 
