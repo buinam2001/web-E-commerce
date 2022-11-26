@@ -1,8 +1,7 @@
 
-trang người dùng : https://gorgeous-pavlova-138a6b.netlify.app/
+trang người dùng : https://polite-sopapillas-1ac472.netlify.app/
 
-
-trang quản trị : https://gorgeous-pavlova-138a6b.netlify.app/admin
+trang quản trị : https://polite-sopapillas-1ac472.netlify.app/admin
 
 
 mô tả : 
