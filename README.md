@@ -6,9 +6,7 @@ trang quản trị : https://gorgeous-pavlova-138a6b.netlify.app/admin
 mô tả : 
 các ngôn ngữ và thư viện sử dụng: html,css,javascript,bootstrap,reactjs,redux toolkit
 
-trang người dùng : https://polite-sopapillas-1ac472.netlify.app
 
-trang quản trị : https://polite-sopapillas-1ac472.netlify.app/admin
 
 
 mô tả : 
@@ -31,10 +29,11 @@ các chức năng chính :
 
 
 
-trang quản trị:
+-trang quản trị:
 
     tên tài khoản : admin
     mật khẩu : admin
+
 
 
     quản lý sản phẩm
