@@ -12,7 +12,8 @@ function Page() {
     useEffect(() => {
         dispatch(getproduct());     
         dispatch(getcategory());
-      },[dispatch]);
+        
+      },[]);
       
  return (
      <div style={{overflowX: "hidden"}}>

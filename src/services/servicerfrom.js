@@ -37,7 +37,10 @@ import { axiosClient } from "../api/axiosClient";
     return axiosClient.post("/auth/login", data).then((response) => {
     
         if (response.data.access_token) {
+
+
           localStorage.setItem("user", JSON.stringify(response.data));
+
           window.location.reload();
         }
       
@@ -46,7 +49,7 @@ import { axiosClient } from "../api/axiosClient";
 
       .catch((err) => {
         
-        alert("sai mật khẩu hoặc Tài khoản không tồn");
+        alert("sai mật khẩu hoặc Tài khoản không tồn tại");
       
           
         })

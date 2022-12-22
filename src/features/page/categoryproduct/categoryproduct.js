@@ -102,7 +102,7 @@ const CategoryProduct = () =>
       
     return(
       
-   
+
         <div style={{marginTop: '145px'}} className="container">
           
          <select value={sortType} onChange={handleChange} className="form-select form-select-lg mb-3 fiter" aria-label=".form-select-lg example">

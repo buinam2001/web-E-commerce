@@ -8,11 +8,13 @@ import "./style.css";
 function FromHome() {
   const [from, setfrom] = useState(false);
   const [loading, setloading] = useState(false);
+  
 
-const handleSigup = () =>
-{ 
-  setfrom(!from)
-}
+
+  const handleSigup = () =>
+  { 
+    setfrom(!from)
+  }
 
 
 const formilogin = useFormik({
@@ -37,7 +39,10 @@ const formilogin = useFormik({
     }
     
     servicerFrom.signIn(fromatvalues).then(function() {
+ 
       localStorage.setItem("data",fromatvalues.name);
+
+     
       setloading(false);
 
     })
